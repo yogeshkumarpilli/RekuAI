@@ -1,0 +1,4 @@
+[core]
+    remote = rekuai
+['remote "rekuai"']
+    url = gs://dvc_anime_rs/
