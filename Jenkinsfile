@@ -11,7 +11,6 @@ pipeline{
                 }
             }
         }
-    }
 
         stage("Set Up Virtual Environment") {
             steps {
@@ -48,5 +47,5 @@ pipeline{
                 }
             }
         }
-
+    }
 }
