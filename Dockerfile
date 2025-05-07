@@ -40,7 +40,7 @@ RUN uv venv && \
 RUN python pipeline/training_pipeline.py
 
 # Expose the port that Flask will run on
-EXPOSE 5000
+EXPOSE 80
 
 # Command to run the app
 CMD ["python", "application.py"]

@@ -98,4 +98,4 @@ async def not_found_exception_handler(request: Request, exc: HTTPException):
 
 if __name__ == "__main__":
     logger.info("Starting Anime Recommender System API")
-    uvicorn.run("application:app", host="0.0.0.0", port=5000, reload=True)
+    uvicorn.run("application:app", host="0.0.0.0", port=80, reload=True)
