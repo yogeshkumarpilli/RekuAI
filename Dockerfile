@@ -7,7 +7,7 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     PATH="/root/.local/bin:/app/.venv/bin:$PATH" 
 
 # Install system dependencies required by TensorFlow
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y  && apt-get install -y curl\
     build-essential \
     libatlas-base-dev \
     libhdf5-dev \
