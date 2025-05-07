@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rekuaiapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: rekuaiapp
+  template:
+    metadata:
+      labels:
+        app: rekuaiapp
+    spec:
+      containers:
+      - name: rekuai-app-container
+        image: gcr.io/spring-hope-458014-e6/anime_recuai:latest
+        ports:
+        - containerPort: 5000  # Replace with the port your app listens on
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: rekuaiapp-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: rekuaiapp
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 5000
