@@ -32,8 +32,13 @@ COPY . .
 # -----------------------------------------------------------------------------
 # Install uv (modern Python dependency manager)
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh && \
-    echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc && \
-    uv venv && \
+    echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc && 
+
+# Copy application code
+COPY . .
+
+# Create and set up virtual environment
+RUN uv venv && \
     uv sync && \
     uv build
 
