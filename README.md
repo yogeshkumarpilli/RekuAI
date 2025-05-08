@@ -151,6 +151,6 @@ Name	Role
 Yogesh Kumar Pilli	
 
 💌 Contact
-📧 Email: yogeshkumarpilli@gmail.com
+📧 Email: pilliyogeshkumar@gmail.com
 🌐 GitHub: @yogeshkumarpilli
 
