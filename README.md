@@ -1,5 +1,5 @@
 
-![Python 3.13+](https://img.shields.io/badge/Python-3.13%2B-3776AB?logo=python&logoColor=white)
+![Python 3.12+](https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white)
 ![UV](https://img.shields.io/badge/uv-0.7.2-FFD43B?logo=pypi&logoColor=black)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.115.2-green)
 ![Docker](https://img.shields.io/badge/Docker-24.0-2496ED?logo=docker&logoColor=white)
@@ -76,21 +76,21 @@ kubectl & gcloud CLI tools
 bash
 Copy
 Edit
-# 1. Clone the repo
+#### 1. Clone the repo
 git clone https://github.com/yogeshkumarpilli/RekuAI.git && cd RekuAI
 
-# 2. Setup virtual environment
+#### 2. Setup virtual environment
 uv venv
 .venv/bin/activate
 
-# 3. Install dependencies
+#### 3. Install dependencies
 uv sync
 uv build
 
-# 4. Pull data from GCP via DVC
+#### 4. Pull data from GCP via DVC
 dvc pull
 
-# 5. Run the app locally
+#### 5. Run the app locally
 uv run application.py
 
 
@@ -133,10 +133,8 @@ Simple search & recommend UI
 Returns a list of top anime recommendations for a given user or title.
 
 ## 🎯 Sample Output
-
+```
 json
-Copy
-Edit
 {
   "input": "Naruto",
   "recommended": [
@@ -147,12 +145,10 @@ Edit
     "Demon Slayer"
   ]
 }
-
-
+```
 👥 Contributors
 Name	Role
 Yogesh Kumar Pilli	
-
 
 💌 Contact
 📧 Email: yogeshkumarpilli@gmail.com
