@@ -147,7 +147,6 @@ json
 }
 ```
 👥 Contributors
-Name	Role
 Yogesh Kumar Pilli	
 
 💌 Contact
